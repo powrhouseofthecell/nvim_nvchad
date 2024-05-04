@@ -48,6 +48,7 @@ return {
         "css-lsp",
         "prettier",
         "eslint-lsp",
+        "gopls",
       },
     },
   },

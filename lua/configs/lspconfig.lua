@@ -35,3 +35,21 @@ lspconfig.eslint.setup {
   on_init = on_init,
   capabilities = capabilities,
 }
+
+-- gopls
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+  cmd = {"gopls"},
+  filetypes = {"go", "gomod", "gowork", "gotmpl"},
+  settings = {
+    gopls = {
+      completeUnimported = true,
+      usePlaceholders = true,
+      analyses = {
+        unusedparams = true,
+      }
+    }
+  }
+}
