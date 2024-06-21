@@ -21,7 +21,6 @@ return {
     ft = { "markdown" },
   },
 
-
   -- none-ls
   {
     "nvimtools/none-ls.nvim",
@@ -68,6 +67,8 @@ return {
     opts = {
       ensure_installed = {
         "vim",
+        "markdown",
+        "markdown_inline",
         "lua",
         "vimdoc",
         "html",
@@ -76,8 +77,18 @@ return {
         "typescript",
         "tsx",
         "go",
-        "rust"
+        "rust",
       },
     },
+  },
+
+  {
+    "MeanderingProgrammer/markdown.nvim",
+    name = "render-markdown", -- Only needed if you have another plugin named markdown.nvim
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    cmd = "RenderMarkdownToggle",
+    config = function()
+      require("render-markdown").setup {}
+    end,
   },
 }
