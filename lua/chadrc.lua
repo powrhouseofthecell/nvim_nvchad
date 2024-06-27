@@ -5,16 +5,15 @@
 local M = {}
 
 M.ui = {
-	theme = "chocolate",
+	-- theme = "chocolate",
 	-- theme = "material-darker",
-	-- theme = "pastelbeans",
-	-- theme = "monochrome",
+	theme = "monochrome",
 	-- theme = "poimandres",
 	-- theme = "pastelbeans",
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+	hl_override = {
+		Comment = { italic = true },
+		["@comment"] = { italic = true },
+	},
 }
 
 return M
