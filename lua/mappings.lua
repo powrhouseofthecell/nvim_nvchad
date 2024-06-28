@@ -4,6 +4,9 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
+-- unmap the Toggle terminal with <leader>h as it was causing issues with harpoon
+vim.cmd('unmap <leader>h')
+
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
@@ -17,12 +20,20 @@ map("n", "<leader>ha", function()
 end, { desc = "Add file to Harpoon" })
 
 map("n", "<leader>hn", function()
-  require("harpoon.ui").nav_next() -- navigates to next mark
+  require("harpoon.ui").nav_next()
 end, { desc = "Move to next in Harpoon list" })
 
 map("n", "<leader>hp", function()
-  require("harpoon.ui").nav_prev() -- navigates to previous mark
+  require("harpoon.ui").nav_prev()
 end, { desc = "Move to previous in Harpoon list" })
+
+map("n", "<leader>hc", function()
+ require("harpoon.mark").clear_all()
+end, { desc = "Clear all marks in Harpoon" })
+
+map("n", "<leader>ht", function()
+  require("telescope").extensions.harpoon.marks()
+end, { desc = "Show marks in Telescope" })
 -- Harpoon Start
 
 -- don't put single character in the register
