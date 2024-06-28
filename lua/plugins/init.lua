@@ -91,4 +91,6 @@ return {
       require("render-markdown").setup {}
     end,
   },
+
+  {'ThePrimeagen/harpoon'}
 }
