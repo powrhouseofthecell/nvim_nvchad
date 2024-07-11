@@ -11,10 +11,14 @@ return {
     "tpope/vim-surround",
   },
 
-  -- {
-  --   "tpope/vim-fugitive",
-  --   event = "VeryLazy",
-  -- },
+  {
+    "tpope/vim-fugitive",
+    event = "VeryLazy",
+  },
+
+  {
+    "tpope/vim-commentary",
+  },
 
   {
     "iamcco/markdown-preview.nvim",
@@ -97,5 +101,5 @@ return {
     end,
   },
 
-  -- { "ThePrimeagen/harpoon" },
+  { "ThePrimeagen/harpoon" },
 }
