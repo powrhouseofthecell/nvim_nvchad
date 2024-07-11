@@ -5,9 +5,9 @@
 local M = {}
 
 M.ui = {
+	theme = "monochrome",
 	-- theme = "chocolate",
 	-- theme = "material-darker",
-	theme = "monochrome",
 	-- theme = "poimandres",
 	-- theme = "pastelbeans",
 	hl_override = {

@@ -11,6 +11,11 @@ return {
     "tpope/vim-surround",
   },
 
+  -- {
+  --   "tpope/vim-fugitive",
+  --   event = "VeryLazy",
+  -- },
+
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -92,5 +97,5 @@ return {
     end,
   },
 
-  {'ThePrimeagen/harpoon'}
+  -- { "ThePrimeagen/harpoon" },
 }
