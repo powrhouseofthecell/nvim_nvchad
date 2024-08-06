@@ -34,7 +34,7 @@ end, { desc = "Clear all marks in Harpoon" })
 map("n", "<leader>ht", function()
   require("telescope").extensions.harpoon.marks()
 end, { desc = "Show marks in Telescope" })
--- Harpoon Start
+-- Harpoon End
 
 -- don't put single character in the register
 map("n", "x", '"_x')
