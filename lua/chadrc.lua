@@ -11,8 +11,8 @@ M.ui = {
 	-- theme = "poimandres",
 	-- theme = "pastelbeans",
 	hl_override = {
-		Comment = { italic = true },
-		["@comment"] = { italic = true },
+		Comment = { italic = false },
+		["@comment"] = { italic = false },
 	},
 }
 
