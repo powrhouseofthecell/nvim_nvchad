@@ -4,9 +4,10 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
--- unmap the Toggle terminal with <leader>h as it was causing issues with harpoon
+-- Unmap the Toggle terminal with <leader>h as it was causing issues with harpoon
 vim.cmd('unmap <leader>h')
 
+-- General Mappings
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
@@ -36,7 +37,13 @@ map("n", "<leader>ht", function()
 end, { desc = "Show marks in Telescope" })
 -- Harpoon End
 
--- don't put single character in the register
+-- Don't put single character in the register
 map("n", "x", '"_x')
 
+-- Uncomment the following line if you want to map <C-s> to save
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+map("n", "<leader>l", "<cmd> SmartResizeRight <cr>")
+map("n", "<leader>h", "<cmd> SmartResizeLeft <cr>")
+map("n", "<leader>k", "<cmd> SmartResizeUp <cr>")
+map("n", "<leader>j", "<cmd> SmartResizeDown <cr>")
