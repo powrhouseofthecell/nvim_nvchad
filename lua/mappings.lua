@@ -43,7 +43,15 @@ map("n", "x", '"_x')
 -- Uncomment the following line if you want to map <C-s> to save
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
+-- Resize Buffers Start
 map("n", "<leader>l", "<cmd> SmartResizeRight <cr>")
 map("n", "<leader>h", "<cmd> SmartResizeLeft <cr>")
 map("n", "<leader>k", "<cmd> SmartResizeUp <cr>")
 map("n", "<leader>j", "<cmd> SmartResizeDown <cr>")
+-- Resize Buffers Start
+
+-- Maximizer Start
+map("n", "<leader>mx", function()
+  require('maximize').toggle()
+end, { desc = "Toggle Maximize" })
+-- Maximizer End
