@@ -93,6 +93,22 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
+    config = function()
+      require("nvim-tree").setup {
+        view = {
+          relativenumber = true,
+          -- float = {
+          --   enable = true
+          -- },
+          number = true,
+          width = 30,
+          side = "right",
+        },
+        renderer = {
+          root_folder_label = false
+        }
+      }
+    end,
     opts = {
       ensure_installed = {
         "vim",
