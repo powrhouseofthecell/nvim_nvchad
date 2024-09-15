@@ -8,6 +8,11 @@ return {
   },
 
   {
+    "declancm/maximize.nvim",
+    config = true,
+  },
+
+  {
     "nvimdev/dashboard-nvim",
     event = "VimEnter",
     config = function()
