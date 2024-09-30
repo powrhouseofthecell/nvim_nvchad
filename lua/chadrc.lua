@@ -7,7 +7,11 @@ local M = {}
 M.ui = {
   -- theme = "dark_horizon",
   -- theme = "mountain",
-  theme = "monochrome",
+
+  theme = "Nightlamp",
+  -- theme = "catppuccin",
+  -- theme = "monochrome",
+
   -- theme = "one_light",
   -- theme = "radium",
   -- theme = "oxocarbon",
